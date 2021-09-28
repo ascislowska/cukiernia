@@ -1,0 +1,45 @@
+@include media-md {
+    .menu-btn {
+        visibility: hidden;
+    }
+    .nav {
+        visibility: visible;
+
+        .menu-nav {
+            display: block;
+            transform: translateY(0);
+            height: 100%;
+            background: transparent;
+            text-align: right;
+            &_item {
+                display: inline;
+                padding-right: 0.5rem;
+            }
+            &_link  {
+                font-size: .9rem;
+                font-family: $font-main;
+
+            }
+
+        
+            &.light .menu-nav_link{
+            @include menu-colors($light-background: false);
+                &:hover {
+                    filter: brightness(60%);
+                }
+            }
+            &_item.active > a{
+                filter: brightness(60%);
+            }
+            &.dark .menu-nav_link{
+            @include menu-colors($light-background: true);
+            &:hover {
+                filter: brightness(60%);
+            }
+            }
+        }
+    }
+    .about_bio {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,64 @@
+.about {
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &_bio-image {
+        height: 100vh;
+        width: 100%;
+        background:
+         linear-gradient(
+            to bottom,
+            rgba($light-color, 0.2),
+            rgba($light-color, 0) 40%,
+            rgba($light-color, 1)
+         ),
+         url('../img/apple-pie.jpg') center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        p {
+            margin-bottom: 1rem;
+        }    
+    }
+    &_bio {
+        width: 80%;
+        text-align:justify;
+        p {
+            padding-bottom: 1rem;;
+        }
+        .motto {
+            color: $primary-color;
+            font: $font-handwritten;
+            font-weight: 600;
+        }
+    }
+    .jobs {
+        width: 60vw;
+        margin: 2rem auto 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        &_job {
+            background: lighten($dark-color, 65%);
+            padding: 1rem;
+            border-bottom: solid 5px $primary-color;
+            h2, h3 {
+                margin: 0.5rem 0;
+            }
+        }
+    }
+    .social-icons {
+        display: flex;
+        flex-direction: column;
+        transform: translateX(-1rem);
+    }
+    footer {
+        transform: 
+            rotate(90deg)
+            translate(-3rem, -3.5rem);
+
+    }
+}
