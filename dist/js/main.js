@@ -23,7 +23,6 @@ function toggleMenu() {
     }
 } 
 function showTitle() {
-    console.log("bam!");
     title.classList.add('title_loaded');
 }
 

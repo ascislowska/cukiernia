@@ -22,7 +22,7 @@ h1 {
     left: 0;
     width: 80vw;
     transform: translateX(-100%);
-    @include transition-ease
+    @include transition-ease;
 
 }
 .title_loaded {
