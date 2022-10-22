@@ -1,3 +1,4 @@
+@import 'config';
 .contact {
   height: 100%;
   padding-top: 4rem;
@@ -5,13 +6,17 @@
   display: flex;
   flex-direction: column;
   background: radial-gradient(
-      circle at 0% bottom,
-      rgba(#000000, 0.98),
-      rgba(#000000, 0.8) 60%,
-      rgba(#000000, 0) 80%
+      circle at 0% top,
+      rgba($dark-color, 1) 0%,
+      rgba($dark-color, 0.8) 60%,
+      rgba($dark-color, 0.4) 80%
     ),
     url('../img/hot-chocolate.jpg');
   background-size: cover;
+  .contact_list div {
+    color: $light-color;
+  }
+
   &_title {
     @extend .projects_title;
   }

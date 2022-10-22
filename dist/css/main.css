@@ -386,6 +386,13 @@ nav .menu-nav_link:hover {
           transform: rotate(90deg) translate(-3rem, -4.5rem);
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .contact {
   height: 100%;
   padding-top: 4rem;
@@ -397,8 +404,12 @@ nav .menu-nav_link:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: radial-gradient(circle at 0% bottom, rgba(0, 0, 0, 0.98), rgba(0, 0, 0, 0.8) 60%, rgba(0, 0, 0, 0) 80%), url("../img/hot-chocolate.jpg");
+  background: radial-gradient(circle at 0% top, #402f25 0%, rgba(64, 47, 37, 0.8) 60%, rgba(64, 47, 37, 0.4) 80%), url("../img/hot-chocolate.jpg");
   background-size: cover;
+}
+
+.contact .contact_list div {
+  color: #FFFAF0;
 }
 
 .contact_list {
