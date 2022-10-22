@@ -1,37 +1,35 @@
 .contact {
-    height: 100%;
-    padding-top: 4rem;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    background: 
-    radial-gradient(
-        circle at 0% bottom,
-        rgba(#fff, 0.98),
-        rgba(#fff, 0.8) 60%,
-        rgba(#fff, 0) 80%
+  height: 100%;
+  padding-top: 4rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(
+      circle at 0% bottom,
+      rgba(#000000, 0.98),
+      rgba(#000000, 0.8) 60%,
+      rgba(#000000, 0) 80%
     ),
     url('../img/hot-chocolate.jpg');
-    background-size: cover;
-    &_title {
-        @extend .projects_title;
+  background-size: cover;
+  &_title {
+    @extend .projects_title;
+  }
+  &_list {
+    width: 80%;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    font-size: 1.2rem;
+    & > * {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 10px;
+      & > *:last-child {
+        grid-column: span 2;
+        font-size: smaller;
+      }
     }
-    &_list {
-        width: 80%;
-        align-self: center;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 2rem;
-        font-size: 1.2rem;
-        & > * {
-            display: grid;
-            grid-template-columns: auto 1fr;
-            gap: 10px;
-            & > *:last-child {
-                grid-column: span 2;
-                font-size: smaller;
-            }
-        }
-    }
+  }
 }
-
